@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio of Yash Kumar Sain – a Software Engineer skilled in web development, data analysis, and modern technologies. Explore my work, skills, and certifications.">
+  <meta name="keywords"
+    content="Yash Kumar Sain, Software Engineer, Web Developer, Frontend Developer, Data Analyst, Portfolio, BCA, HTML, CSS, JavaScript, Power BI, SQL">
+  <meta name="author" content="Yash Kumar Sain">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Yash Kumar Sain | Software Engineer Portfolio">
+  <meta property="og:description"
+    content="Explore the work and skills of Yash Kumar Sain – a passionate software engineer and data analyst.">
+  <meta property="og:image" content="https://yourdomain.com/Images/Yash.png">
+  <meta property="og:url" content="https://yourdomain.com/">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Yash Kumar Sain | Software Engineer</title>
+  <script>
+  (function () {
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+  })();
+</script>
+
+  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="Images/Yash.png" />
+</head>
+
+<body>
+
+  <header class="header">
+    <a href="#" class="logo">Yash</a>
+    <i class='bxr  bx-menu' id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="theme-toggle" aria-label="Toggle Theme"><i class='bx bx-moon'></i></button>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-content">
+      <h3>Hello, It's Me</h3>
+      <h1>Yash Kumar Sain</h1>
+      <h3>And I'm a <span class="multiple-text"></span></h3>
+      <p>I'm a dedicated Software Engineer with a passion for creating impactful digital experiences. I blend creativity
+        with technical precision to bring ideas to life.</p>
+      <div class="social-media">
+        <a href="tel:+918769473687" title="+91 8769473687">
+          <i class='bx bx-phone'></i>
+        </a>
+        <a href="mailto:yashkumarsain25@gmail.com" title="yashkumarsain25@gmail.com">
+          <i class='bx bx-envelope'></i>
+        </a>
+        <a href="https://www.linkedin.com/in/yash-kumar-sain" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/yksain" title="GitHub"><i class='bx bxl-github'></i></a>
+      </div>
+      <a href="Docs/Yash_Kumar_Sain_Resume.pdf" class="btn" download>Download Resume</a>
+    </div>
+
+    <div class="home-img">
+      <img src="Images/Yash.png" alt="Yash Kumar Sain – Portfolio Image">
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-img">
+      <img src="Images/Yash.png" alt="Yash Kumar Sain – Portfolio Image">
+    </div>
+
+    <div class="about-content">
+      <h2 class="heading">About <span>Me</span></h2>
+      <h3>Software Engineer</h3>
+      <p>Hi, I'm a passionate and motivated Software Engineer with a Bachelor's degree in Computer Applications (BCA).
+        As a recent graduate, I'm excited to begin my professional journey in the tech industry and contribute to
+        meaningful projects that solve real-world problems.Throughout my academic career, I built a solid foundation in
+        programming, web development, and database management.<span id="dots">.....</span>
+      <div id="more">I've worked with languages and tools like Java, Python, C++, HTML, CSS, JavaScript, and MySQL, and
+        I've developed several academic projects that reflect my ability to think critically and solve problems
+        effectively.I’m constantly learning and staying up-to-date with the latest technologies, and I’m eager to apply
+        my skills in a real-world environment. I'm particularly interested in full-stack development, software design,
+        and creating intuitive user experiences.If you're looking for a driven and adaptable team player with a love for
+        code and creativity, I'd love to connect!</div>
+      </p>
+      <button onclick="toggleReadMore()" class="read-more-button" id="readMoreBtn">Read More</button>
+    </div>
+  </section>
+
+
+  <section class="education" id="education">
+    <h2 class="heading">My <span>Education</span></h2>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Bachelor of Computer Applications (BCA)</h3>
+          <p>University Of Rajasthan, Jaipur</p>
+          <span class="timeline-date">2021 - 2024</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>12th - Science (PCM)</h3>
+          <p>The Modern Happy School, Jaipur</p>
+          <span class="timeline-date">2020 - 2021</span>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>10th - RBSE Board</h3>
+          <p>Maharishi Gautam Vidyapeeth School, Jaipur</p>
+          <span class="timeline-date">2018 - 2019</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+
+    <div class="skills-columns">
+
+      <!-- Technical Skills -->
+      <div class="skills-column">
+        <h3 class="skills-title">Technical Skills</h3>
+        <div class="skills-box"><i class='bx bxl-c-plus-plus'></i>
+          <h4>C / C++</h4>
+        </div>
+        <div class="skills-box"><i class='bx bxl-html5'></i>
+          <h4>HTML</h4>
+        </div>
+        <div class="skills-box"><i class='bx bxl-css3'></i>
+          <h4>CSS</h4>
+        </div>
+        <div class="skills-box"><i class='bx bxl-javascript'></i>
+          <h4>JavaScript</h4>
+        </div>
+        <div class="skills-box"><i class='bx bxl-bootstrap'></i>
+          <h4>Bootstrap</h4>
+        </div>
+        <div class="skills-box"><i class='bx bxs-data'></i>
+          <h4>SQL</h4>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skills-column">
+        <h3 class="skills-title">Soft Skills</h3>
+        <div class="skills-box"><i class='bx bx-conversation'></i>
+          <h4>Communication</h4>
+        </div>
+        <div class="skills-box"><i class='bx bx-brain'></i>
+          <h4>Problem Solving</h4>
+        </div>
+        <div class="skills-box"><i class='bx bx-group'></i>
+          <h4>Teamwork</h4>
+        </div>
+        <div class="skills-box"><i class='bx bx-refresh'></i>
+          <h4>Adaptability</h4>
+        </div>
+      </div>
+
+      <!-- Managing Skills -->
+      <div class="skills-column">
+        <h3 class="skills-title">Managing Skills</h3>
+        <div class="skills-box"><i class='bx bx-time-five'></i>
+          <h4>Time Management</h4>
+        </div>
+        <div class="skills-box"><i class='bx bx-bulb'></i>
+          <h4>Leadership</h4>
+        </div>
+        <div class="skills-box"><i class='bx bx-check-double'></i>
+          <h4>Decision Making</h4>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="skills-column">
+        <h3 class="skills-title">Tools</h3>
+        <div class="skills-box"><i class='bx bxs-bar-chart-alt-2'></i>
+          <h4>Power BI</h4>
+        </div>
+        <div class="skills-box"><i class='bx bxs-spreadsheet'></i>
+          <h4>Excel</h4>
+        </div>
+        <div class="skills-box"><i class='bx bx-data'></i>
+          <h4>Database Management</h4>
+        </div>
+        <div class="skills-box"><i class='bx bx-analyse'></i>
+          <h4>Data Analysis</h4>
+        </div>
+        <div class="skills-box"><i class='bx bxs-bot'></i>
+          <h4>AI Proficiency</h4>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="certifications" id="certifications">
+    <h2 class="heading">My <span>Certifications</span></h2>
+
+    <div class="certifications-container">
+
+      <div class="cert-box">
+        <h3>C++</h3>
+        <p>Completed a certification in Internship training in C++ with Grade A+ from Samyak IT Solutions</p>
+        <span>Issued: Oct 2022</span>
+        <a href="Docs/28-Oct-2022_9-9.pdf" class="cert-link" target="_blank">
+          <i class='bx bx-link-external'></i> View Certificate
+        </a>
+      </div>
+
+      <div class="cert-box">
+        <h3>Web Designing</h3>
+        <p>Completed a certification in Internship training in Web Designing with Grade A+ from Samyak IT Solutions</p>
+        <span>Issued: Feb 2023</span>
+        <a href="Docs/21-Jun-2023_18-18.pdf" class="cert-link" target="_blank">
+          <i class='bx bx-link-external'></i> View Certificate
+        </a>
+      </div>
+
+      <div class="cert-box">
+        <h3>Core Java</h3>
+        <p>Completed a certification in core java from Technoglobe(VSM Infotech)</p>
+        <span>Issued: Dec 2023</span>
+        <a href="Docs/Yash kumar sain 687.pdf" class="cert-link" target="_blank">
+          <i class='bx bx-link-external'></i> View Certificate
+        </a>
+      </div>
+
+      <div class="cert-box">
+        <h3>Data Analysis | Communication Skills | Soft Skills</h3>
+        <p>TCS iON Career Edge - Young Professional course from TATA(TCS iON)</p>
+        <span>Issued: June 2025</span>
+        <a href="Docs/Yash_Sain_TCSiON_Certificate.pdf" class="cert-link" target="_blank">
+          <i class='bx bx-link-external'></i> View Certificate
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="leadership" id="leadership">
+    <h2 class="heading">Leadership <span>Roles</span></h2>
+
+    <div class="leadership-container">
+
+      <div class="leadership-box">
+        <i class='bx bx-cog'></i>
+        <div>
+          <h3>Project Lead – College Management System</h3>
+          <p>Led the development of a comprehensive College Management System website, streamlining student, faculty,
+            and admin operations. Oversaw full-stack implementation, task delegation, and project delivery within
+            academic deadlines.</p>
+        </div>
+      </div>
+
+      <div class="leadership-box">
+        <i class='bx bx-calendar-event'></i>
+        <div>
+          <h3>Event Coordinator – University of Rajasthan</h3>
+          <p>Coordinated logistics, scheduling, and team operations for the university’s annual cultural function.
+            Ensured smooth execution by managing cross-team communication and handling on-ground responsibilities during
+            the event.</p>
+        </div>
+      </div>
+
+      <div class="leadership-box">
+        <i class='bx bx-group'></i>
+        <div>
+          <h3>Core Member – BDC</h3>
+          <p>Organized multiple blood donation drives, managed diverse teams, and contributed to community outreach
+            initiatives.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="Images/Home.png" alt="Project: College Management System">
+        <div class="portfolio-layer">
+          <h4>College Management System</h4>
+          <p>A web platform to manage students, staff, and academics — built with HTML, CSS, JS, and PHP.</p>
+          <a href="https://find4.info/yashkumar/"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="Images/dashboard-thumbnail.png" alt="Customer Churn Dashboard">
+        <div class="portfolio-layer">
+          <h4>Customer Churn Dashboard</h4>
+          <p>A Power BI dashboard visualizing churn behavior using demographic, regional, and consumption insights.
+            Built with Excel & Power BI.</p>
+          <a href="Docs/Dashboard.pdf" target="_blank"><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+  </section>
+
+  <section class="interests" id="interests">
+    <h2 class="heading">My <span>Interests</span></h2>
+
+    <div class="interests-container">
+
+      <div class="interest-box">
+        <i class='bx bx-cricket-ball'></i>
+        <h4>Sports</h4>
+        <p>I’m passionate about sports like cricket and badminton, which keep me active, focused, and team-driven.</p>
+      </div>
+
+      <div class="interest-box">
+        <i class='bx bx-tv'></i>
+        <h4>Entertainment</h4>
+        <p>I love watching movies, web series, and live cricket matches — both for entertainment and analytical insight
+          into game strategies and storytelling.</p>
+      </div>
+
+      <div class="interest-box">
+        <i class='bx bx-code-alt'></i>
+        <h4>Exploring Technologies</h4>
+        <p>I constantly explore new tools, frameworks, and innovations to stay ahead in the tech landscape.</p>
+      </div>
+
+      <div class="interest-box">
+        <i class='bx bx-book-reader'></i>
+        <h4>Reading & Research</h4>
+        <p>I enjoy reading tech blogs, research papers, and developer stories to stay updated and deepen my knowledge.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+    <form action="https://formspree.io/f/mzzvbnvy" method="POST">
+      <p class="form-status" id="form-status"></p>
+      <div class="input-box">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+      </div>
+      <div class="input-box">
+        <input type="tel" name="phone" placeholder="Mobile Number">
+        <input type="text" name="subject" placeholder="Email Subject" required>
+      </div>
+      <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+      <input type="submit" value="Send Message" class="btn">
+    </form>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-text">
+      <p>Copyright &copy; 2025 by Yash Kumar Sain | All Rights Reserved.</p>
+    </div>
+    <div class="footer-iconTop">
+      <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
