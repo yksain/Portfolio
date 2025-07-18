@@ -1,4 +1,3 @@
-
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
@@ -27,16 +26,10 @@ window.onscroll = () => {
   });
 
   let header = document.querySelector('header');
-
   header.classList.toggle('sticky', window.scrollY > 100);
-
-
   menuIcon.classList.remove('bx-x');
   navbar.classList.remove('active');
-
 };
-
-
 
 function toggleReadMore() {
   const moreText = document.getElementById("more");
@@ -71,9 +64,6 @@ ScrollReveal().reveal('.certifications-container', { origin: 'bottom', distance:
 ScrollReveal().reveal('.timeline', { origin: 'left', distance: '60px', duration: 1200, delay: 200 });
 ScrollReveal().reveal('.leadership-box', { origin: 'bottom', distance: '50px', duration: 1000, delay: 200, interval: 200 });
 
-
-
-
 const typed = new Typed('.multiple-text', {
   strings: ['Software Engineer', 'Frontend Developer', 'Data Analyst'],
   typeSpeed: 100,
@@ -81,7 +71,6 @@ const typed = new Typed('.multiple-text', {
   backDelay: 1000,
   loop: true
 });
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.getElementById('theme-toggle');
@@ -110,9 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("form");
   const status = document.getElementById("form-status");
@@ -137,7 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 let debounce = (func, delay) => {
   let timer;
   return function () {
@@ -148,7 +133,6 @@ let debounce = (func, delay) => {
 
 window.onscroll = debounce(() => {
 }, 100);
-
 
 document.querySelectorAll('.navbar a').forEach(link =>
   link.addEventListener('click', () => {
