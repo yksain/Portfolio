@@ -44,6 +44,7 @@ body {
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
+  margin-bottom: 2rem;
   scroll-margin-top: 8rem;
 }
 
@@ -551,6 +552,8 @@ span {
   color: var(--text-color);
 }
 
+
+
 .portfolio {
   background: var(--bg-color);
 }
@@ -759,182 +762,45 @@ span {
   color: var(--second-bg-color);
 }
 
-
-@media (max-width: 1200px) {
+/* ======= 1. Large Screens (Desktops ≥ 1200px) ======= */
+@media (min-width: 1200px) {
   html {
-    font-size: 55%;
+    font-size: 62.5%;
   }
 }
 
-@media (max-width: 991px) {
+/* ======= 2. Medium Screens (Tablets & Small Laptops: 992px - 1199px) ======= */
+@media (max-width: 1199px) {
   html {
-    padding: 2rem 3%;
+    font-size: 56%;
   }
 
   section {
-    padding: 10rem 3% 2rem;
-  }
-
-  .skills {
-    padding-bottom: 7rem;
-  }
-
-  .portfolio {
-    padding-bottom: 7rem;
-  }
-
-  .contact {
-    min-height: auto;
-  }
-
-  .footer {
-    padding: 2rem 3%;
+    padding: 8rem 6%;
   }
 }
 
-
-@media (max-width: 768px) {
-  #menu-icon {
-    display: block;
+/* ======= 3. Tablets (768px - 991px) ======= */
+@media (max-width: 991px) {
+  html {
+    font-size: 52%;
   }
 
-  .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 1rem 3%;
-    background: var(--bg-color);
-    border-top: .1rem solid rgba(0, 0, 0, .2);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-    display: none;
-  }
-
-  .navbar.active {
-    display: block;
-  }
-
-  .navbar a {
-    display: block;
-    font-size: 2rem;
-    margin: 3rem 0;
+  section {
+    padding: 8rem 4%;
   }
 
   .home {
     flex-direction: column;
   }
 
-  .home-content h3 {
-    font-size: 2.6rem;
-  }
-
-  .home-content h1 {
-    font-size: 5rem;
-  }
-
-  .home-img img {
-    width: 70vw;
-    margin-top: 4rem;
-  }
-
   .about {
     flex-direction: column-reverse;
   }
 
-  .about img {
-    width: 70vw;
-    margin-top: 4rem;
-  }
-
-  .skills h2 {
-    margin-bottom: 3rem;
-  }
-
-  .portfolio h2 {
-    margin-bottom: 3rem;
-  }
-
-  .portfolio-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .timeline {
-    padding-left: 20px;
-    border-left: 2px solid var(--main-color);
-  }
-
-  .timeline-dot {
-    width: 1.5rem;
-    height: 1.5rem;
-    left: -1.1rem;
-  }
-
-    .timeline-content {
-    padding: 1.5rem;
-    font-size: 1.5rem;
-  }
-
-  .timeline-content h3 {
-    font-size: 1.8rem;
-  }
-
-  .timeline-content p {
-    font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 617px) {
-  .portfolio-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
-
-  .contact form .input-box input {
-    width: 100%;
-  }
-}
-
-@media (max-width: 365px) {
-  .home-img img {
-    width: 90vw;
-  }
-
-  .about-img img {
-    width: 90vw;
-  }
-
-  .footer {
-    flex-direction: column-reverse;
-  }
-
-  .footer p {
-    text-align: center;
-    margin-top: 2rem;
-  }
-}
-
-@media (max-width: 480px) {
-   html {
-    font-size: 50%;
-  }
-
-  .home-content h1 {
-    font-size: 3.6rem;
-  }
-
-  .home-content h3 {
-    font-size: 2.4rem;
-  }
-
   .home-img img,
   .about-img img {
-    width: 80vw;
-    height: auto;
+    width: 70vw;
   }
 
   .portfolio-container {
@@ -944,35 +810,113 @@ span {
   .skills-columns,
   .interests-container,
   .certifications-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+/* ======= 4. Mobile Phones (481px - 767px) ======= */
+@media (max-width: 767px) {
+  #menu-icon {
+    display: block;
   }
 
-  .timeline {
-    padding-left: 20px;
-    border-left: 2px solid var(--main-color);
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    z-index: 100;
   }
 
-  .timeline-dot {
-    width: 1.5rem;
-    height: 1.5rem;
-    left: -1.1rem;
-  }
-
-  .timeline-content h3 {
-    font-size: 1.6rem;
-  }
-
-  .timeline-content p {
-    font-size: 1.4rem;
+  .navbar.active {
+    display: flex;
   }
 
   .navbar a {
-    font-size: 1.8rem;
     margin: 2rem 0;
+    font-size: 2rem;
+  }
+
+  .home-content,
+  .about-content {
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .home-content h1 {
+    font-size: 4.2rem;
+  }
+
+  .home-content h3,
+  .about-content h3 {
+    font-size: 2.6rem;
+  }
+
+  .home-content p,
+  .about-content p {
+    font-size: 1.5rem;
+  }
+
+  .skills-columns,
+  .interests-container,
+  .certifications-container {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-content {
+    padding: 1.6rem;
+  }
+}
+
+/* ======= 5. Small Phones (≤ 480px) ======= */
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+   .logo {
+    font-size: 2rem;
+  }
+
+  #theme-toggle {
+    font-size: 1.4rem;
+    padding: 6px;
+  }
+
+  .social-media a {
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 1.8rem;
+  }
+
+  section {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+  }
+
+  .home-img img,
+  .about-img img {
+    width: 80vw;
+  }
+
+  .contact form .input-box input {
+    width: 100%;
+  }
+
+  .portfolio-container {
+    grid-template-columns: 1fr;
   }
 
   .footer {
     flex-direction: column;
     text-align: center;
+  }
+
+  .footer p {
+    margin-top: 2rem;
   }
 }
