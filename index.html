@@ -3,38 +3,65 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <meta name="description"
-    content="Portfolio of Yash Kumar Sain – a Software Engineer skilled in web development, data analysis, and modern technologies. Explore my work, skills, and certifications.">
-  <meta name="keywords"
-    content="Yash Kumar Sain, Software Engineer, Web Developer, Frontend Developer, Data Analyst, Portfolio, BCA, HTML, CSS, JavaScript, Power BI, SQL">
-  <meta name="author" content="Yash Kumar Sain">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Yash Kumar Sain | Software Engineer Portfolio">
-  <meta property="og:description"
-    content="Explore the work and skills of Yash Kumar Sain – a passionate software engineer and data analyst.">
-  <meta property="og:image" content="https://yourdomain.com/Images/Yash.png">
-  <meta property="og:url" content="https://yourdomain.com/">
-  <meta name="twitter:card" content="summary_large_image">
-  <title>Yash Kumar Sain | Software Engineer</title>
-  <script>
-  (function () {
-    const savedTheme = localStorage.getItem('theme') || 'dark';
-    document.documentElement.setAttribute('data-theme', savedTheme);
-  })();
-</script>
+    content="Portfolio of Yash Kumar Sain – a software engineer skilled in web development, frontend technologies, and data analysis." />
+  <meta name="robots" content="index, follow" />
 
-  <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Yash Kumar Sain | Software Engineer Portfolio" />
+  <meta property="og:description"
+    content="Explore the work and skills of Yash Kumar Sain – a passionate software engineer and data analyst." />
+  <meta property="og:image" content="https://yash-kumar-sain.netlify.app/Images/Yash.png" />
+  <meta property="og:url" content="https://yash-kumar-sain.netlify.app/" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Yash Kumar Sain | Software Engineer Portfolio" />
+  <meta name="twitter:description"
+    content="Explore the work and skills of Yash Kumar Sain – a passionate software engineer and data analyst." />
+  <meta name="twitter:image" content="https://yash-kumar-sain.netlify.app/Images/Yash.png" />
+
+  <link rel="canonical" href="https://yash-kumar-sain.netlify.app/" />
   <link rel="icon" type="image/png" href="Images/Yash.png" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem('theme') || 'dark';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Yash Kumar Sain",
+    "url": "https://yash-kumar-sain.netlify.app/",
+    "jobTitle": "Software Engineer",
+    "sameAs": [
+      "https://github.com/yksain",
+      "https://www.linkedin.com/in/yash-kumar-sain"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "University Of Rajasthan"
+    }
+  }
+  </script>
+
+  <title>Yash Kumar Sain | Software Engineer</title>
 </head>
+
 
 <body>
 
   <header class="header">
     <a href="#" class="logo">Yash</a>
-    <i class='bxr  bx-menu' id="menu-icon"></i>
+    <i class='bx bx-menu' id="menu-icon"></i>
 
     <nav class="navbar">
       <a href="#home" class="active">Home</a>
@@ -68,13 +95,13 @@
     </div>
 
     <div class="home-img">
-      <img src="Images/Yash.png" alt="Yash Kumar Sain – Portfolio Image">
+      <img src="Images/Yash.png" alt="Screenshot of College Management System project">
     </div>
   </section>
 
   <section class="about" id="about">
     <div class="about-img">
-      <img src="Images/Yash.png" alt="Yash Kumar Sain – Portfolio Image">
+      <img src="Images/Yash.png" alt="Screenshot of College Management System project">
     </div>
 
     <div class="about-content">
@@ -84,13 +111,13 @@
         As a recent graduate, I'm excited to begin my professional journey in the tech industry and contribute to
         meaningful projects that solve real-world problems.Throughout my academic career, I built a solid foundation in
         programming, web development, and database management.<span id="dots">.....</span>
+      </p>
       <div id="more">I've worked with languages and tools like Java, Python, C++, HTML, CSS, JavaScript, and MySQL, and
         I've developed several academic projects that reflect my ability to think critically and solve problems
         effectively.I’m constantly learning and staying up-to-date with the latest technologies, and I’m eager to apply
         my skills in a real-world environment. I'm particularly interested in full-stack development, software design,
         and creating intuitive user experiences.If you're looking for a driven and adaptable team player with a love for
         code and creativity, I'd love to connect!</div>
-      </p>
       <button onclick="toggleReadMore()" class="read-more-button" id="readMoreBtn">Read More</button>
     </div>
   </section>
@@ -319,6 +346,7 @@
           <a href="Docs/Dashboard.pdf" target="_blank"><i class='bx bx-link-external'></i></a>
         </div>
       </div>
+    </div>
   </section>
 
   <section class="interests" id="interests">
@@ -358,7 +386,7 @@
 
   <section class="contact" id="contact">
     <h2 class="heading">Contact <span>Me!</span></h2>
-    <form action="https://formspree.io/f/mzzvbnvy" method="POST">
+    <form action="https://formspree.io/f/mzzvbnvy" method="POST" autocomplete="off">
       <p class="form-status" id="form-status"></p>
       <div class="input-box">
         <input type="text" name="name" placeholder="Full Name" required>
