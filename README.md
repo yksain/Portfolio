@@ -3,7 +3,7 @@
 
 Welcome to my personal portfolio website! This site showcases my background as a Software Engineer and Data Analyst, highlighting my skills, projects, certifications, and interests.
 
-🌐 **Live Demo**: [Visit Portfolio](https://find4.info/yashkumar/)  
+🌐 **Live Demo**: [Visit Portfolio](https://yash-kumar-sain.netlify.app/)  
 📄 **Resume**: [Download Resume](Docs/Yash_Kumar_Sain_Resume.pdf)
 
 ---
