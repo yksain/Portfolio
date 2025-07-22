@@ -39,6 +39,7 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
+  overflow-x: hidden;
 }
 
 section {
@@ -762,62 +763,19 @@ span {
   color: var(--second-bg-color);
 }
 
-/* ======= 1. Large Screens (Desktops ≥ 1200px) ======= */
-@media (min-width: 1200px) {
+/* ========== Responsive Design for Mobile & Tablet ========== */
+@media (max-width: 768px) {
   html {
-    font-size: 62.5%;
-  }
-}
-
-/* ======= 2. Medium Screens (Tablets & Small Laptops: 992px - 1199px) ======= */
-@media (max-width: 1199px) {
-  html {
-    font-size: 56%;
+    font-size: 55%;
   }
 
-  section {
-    padding: 8rem 6%;
-  }
-}
-
-/* ======= 3. Tablets (768px - 991px) ======= */
-@media (max-width: 991px) {
-  html {
-    font-size: 52%;
+  .header {
+    padding: 2rem 5%;
   }
 
-  section {
-    padding: 8rem 4%;
-  }
-
-  .home {
-    flex-direction: column;
-  }
-
-  .about {
-    flex-direction: column-reverse;
-  }
-
-  .home-img img,
-  .about-img img {
-    width: 70vw;
-  }
-
-  .portfolio-container {
-    grid-template-columns: 1fr;
-  }
-
-  .skills-columns,
-  .interests-container,
-  .certifications-container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
-}
-
-/* ======= 4. Mobile Phones (481px - 767px) ======= */
-@media (max-width: 767px) {
   #menu-icon {
     display: block;
+    cursor: pointer;
   }
 
   .navbar {
@@ -826,10 +784,8 @@ span {
     left: 0;
     width: 100%;
     background: var(--bg-color);
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    display: none;
     flex-direction: column;
-    z-index: 100;
+    display: none;
   }
 
   .navbar.active {
@@ -837,86 +793,109 @@ span {
   }
 
   .navbar a {
-    margin: 2rem 0;
-    font-size: 2rem;
-  }
-
-  .home-content,
-  .about-content {
+    display: block;
+    margin: 1rem 0;
     text-align: center;
-    padding: 0 1rem;
   }
 
-  .home-content h1 {
-    font-size: 4.2rem;
+  .home {
+    flex-direction: column;
+    padding: 0 5% 3rem;
   }
 
-  .home-content h3,
-  .about-content h3 {
-    font-size: 2.6rem;
-  }
-
-  .home-content p,
-  .about-content p {
-    font-size: 1.5rem;
-  }
-
-  .skills-columns,
-  .interests-container,
-  .certifications-container {
-    grid-template-columns: 1fr;
-  }
-
-  .timeline-content {
-    padding: 1.6rem;
-  }
-}
-
-/* ======= 5. Small Phones (≤ 480px) ======= */
-@media (max-width: 480px) {
-  html {
-    font-size: 50%;
-  }
-
-   .logo {
-    font-size: 2rem;
-  }
-
-  #theme-toggle {
-    font-size: 1.4rem;
-    padding: 6px;
-  }
-
-  .social-media a {
-    width: 3.5rem;
-    height: 3.5rem;
-    font-size: 1.8rem;
-  }
-
-  section {
-    padding-top: 6rem;
-    padding-bottom: 3rem;
+  .home-content {
+    text-align: center;
+    margin-top: 12rem;
   }
 
   .home-img img,
   .about-img img {
-    width: 80vw;
+    width: 75vw;
+    max-width: 280px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 8px var(--main-color);
+    object-fit: cover;
+  }
+
+
+  section {
+    padding: 5rem 5% 3rem;
+    scroll-margin-top: 10rem;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skills-columns,
+  .certifications-container,
+  .interests-container,
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-box,
+  .cert-box,
+  .leadership-box,
+  .interest-box {
+    max-width: 100%;
+    overflow-wrap: break-word;
   }
 
   .contact form .input-box input {
     width: 100%;
   }
 
-  .portfolio-container {
-    grid-template-columns: 1fr;
+  .contact {
+    padding-bottom: 0rem !important;
+  }
+
+  .contact form {
+    margin-bottom: 0rem !important;
   }
 
   .footer {
     flex-direction: column;
     text-align: center;
+    gap: 1rem;
+    padding-top: 1rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
   }
 
-  .footer p {
-    margin-top: 2rem;
+  .home-content {
+    margin-top: 13.5rem;
+  }
+
+  .home-content h1 {
+    font-size: 4.5rem;
+  }
+
+  .home-content h3,
+  .about-content h3,
+  .skills-title {
+    font-size: 2.4rem;
+  }
+
+  .btn,
+  .read-more-button {
+    font-size: 1.4rem;
+    padding: 0.8rem 2rem;
+  }
+
+  .portfolio-layer h4 {
+    font-size: 2.4rem;
+  }
+
+  .portfolio-layer p {
+    font-size: 1.4rem;
   }
 }
